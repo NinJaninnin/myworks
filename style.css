@@ -1,1 +1,22 @@
 /* Add styles here */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #e0e0e0;
+}
