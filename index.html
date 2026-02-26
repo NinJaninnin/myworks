@@ -1,22 +1,55 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>My Awesome Project</title>
   <link href='/style.css' rel='stylesheet'>
+  <script src="/main.js"></script>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-
-  <div class="button-container">
-    <a href="https://gemini.google.com" target="_blank" class="button-link">Gemini</a>
-    <a href="https://studio.firebase.google.com" target="_blank" class="button-link">Firebase Studio</a>
-    <a href="https://github.com" target="_blank" class="button-link">GitHub</a>
-    <a href="https://www.cloudflare.com" target="_blank" class="button-link">Cloudflare</a>
+  <div class="language-selector">
+    <button onclick="changeLanguage('ko')">한국어</button>
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('ja')">日本語</button>
   </div>
 
-  <script defer type="text/javascript" src="/main.js"></script>
+  <h1 data-lang="title">멋진 프로젝트</h1>
+
+  <div class="category">
+    <h2 data-lang="devTools">개발 도구</h2>
+    <div class="button-container">
+      <a href="https://gemini.google.com" target="_blank" class="button-link">
+        <h3 data-lang="gemini_title">Gemini</h3>
+        <p data-lang="gemini_desc">창의적이고 유용한 협업 도구입니다.</p>
+      </a>
+      <a href="https://studio.firebase.google.com" target="_blank" class="button-link">
+        <h3 data-lang="firebase_title">Firebase Studio</h3>
+        <p data-lang="firebase_desc">웹 앱을 쉽게 빌드하고 배포하세요.</p>
+      </a>
+      <a href="https://github.com" target="_blank" class="button-link">
+        <h3 data-lang="github_title">GitHub</h3>
+        <p data-lang="github_desc">세계 최고의 소프트웨어 개발 플랫폼입니다.</p>
+      </a>
+      <a href="https://www.cloudflare.com" target="_blank" class="button-link">
+        <h3 data-lang="cloudflare_title">Cloudflare</h3>
+        <p data-lang="cloudflare_desc">더 나은 인터넷을 만드는 데 도움을 줍니다.</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2 data-lang="aiStudio">Google AI Studio</h2>
+    <div class="button-container">
+      <a href="https://aistudio.google.com/apps/676eb1f0-ca39-4d77-98d7-ad9cd63adbf3?showPreview=true&showAssistant=true" target="_blank" class="button-link">
+        <h3 data-lang="posemaster_title">PoseMaster</h3>
+        <p data-lang="posemaster_desc">AI로 멋진 포즈를 만들어 보세요.</p>
+      </a>
+      <a href="https://aistudio.google.com/apps/drive/1LJ9RWyiPgtlDIrPi8qMqN5aqzFuFp7eE?showPreview=true&showAssistant=true" target="_blank" class="button-link">
+        <h3 data-lang="promptlens_title">PromptLens</h3>
+        <p data-lang="promptlens_desc">프롬프트의 힘을 탐색해 보세요.</p>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
